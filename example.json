@@ -1,0 +1,14 @@
+[
+  {
+    "url": "http://pokeapi.co/api/v2/pokemon/1/",
+    "method": "GET"
+  },
+  {
+    "url": "http://pokeapi.co/api/v2/pokemon/2/",
+    "method": "GET"
+  },
+  {
+    "url": "http://pokeapi.co/api/v2/pokemon/3/",
+    "method": "GET"
+  }
+]

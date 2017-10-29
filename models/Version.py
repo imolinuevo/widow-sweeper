@@ -1,5 +1,3 @@
-
-
 class Version(object):
 
     def __init__(self):
