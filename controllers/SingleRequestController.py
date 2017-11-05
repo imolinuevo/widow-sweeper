@@ -1,8 +1,9 @@
+from models.SecurityRequest import SecurityRequest
+
 class SingleRequestController(object):
 
     def __init__(self, url, method):
-        self.url = str(url)
-        self.method = str(method)
+        self.security_request = SecurityRequest(url, method)
 
     def __str__(self):
-        return "Url: " + self.url + " Method: " + self.method
+        return str(self.security_request)

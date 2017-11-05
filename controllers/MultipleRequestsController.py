@@ -1,4 +1,5 @@
 import json
+from models.SecurityRequest import SecurityRequest
 
 class MultipleRequestsController(object):
 
@@ -14,7 +15,7 @@ class MultipleRequestsController(object):
             if(len(self.config) > 0):
                 ret = ""
                 for request in self.config:
-                    ret += "Url: " + request['url'] + " Method: " + request['method'] + "\n"
+                    ret += str(SecurityRequest(request['url'], request['method'])) + "\n"
                 return ret
             else:
                 return "Empty configuration file."
